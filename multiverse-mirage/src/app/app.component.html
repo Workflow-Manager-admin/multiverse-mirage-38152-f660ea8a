@@ -1,0 +1,38 @@
+<app-galaxy-background></app-galaxy-background>
+<nav class="navbar">
+  <div class="logo">
+    <span class="logo-symbol">✶</span>
+    Multiverse Mirage
+  </div>
+  <div class="navbar-right">
+    <app-immersive-audio-toggle></app-immersive-audio-toggle>
+    <a class="github-link" href="https://github.com/kaviacode/multiverse-mirage" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</nav>
+
+<main>
+  <ng-container *ngIf="!started; else simulationMode">
+    <app-what-if-landing (submitted)="onScenarioSubmit($event)"></app-what-if-landing>
+  </ng-container>
+  <ng-template #simulationMode>
+    <div class="split-container">
+      <!-- Narrative/Chat/Poem (Left) -->
+      <section class="split-left">
+        <button class="back-btn" (click)="onBack()" aria-label="Back to prompt">⟵ Back</button>
+        <app-narrative-timeline [scenario]="scenario" [profile]="profile"></app-narrative-timeline>
+        <app-mirrorchat [scenario]="scenario"></app-mirrorchat>
+        <app-memory-poem [scenario]="scenario"></app-memory-poem>
+        <app-rewind-reroll></app-rewind-reroll>
+      </section>
+      <!-- Visuals/Dashboard (Right) -->
+      <section class="split-right">
+        <app-visual-reality-renders [scenario]="scenario"></app-visual-reality-renders>
+        <app-metrics-dashboard [scenario]="scenario"></app-metrics-dashboard>
+        <div class="dream-animation-tip">Dreamlike Animations enabled</div>
+      </section>
+    </div>
+  </ng-template>
+</main>
+
+<!-- SOFT COLOR OVERLAYS (ambient glows) -->
+<app-cosmic-glows></app-cosmic-glows>

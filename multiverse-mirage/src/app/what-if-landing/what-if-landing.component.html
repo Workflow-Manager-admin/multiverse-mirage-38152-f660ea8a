@@ -1,0 +1,35 @@
+<div class="galaxy-card">
+  <div class="card-head">Enter the Multiverse</div>
+  <h1>What if...</h1>
+  <div class="subtext">
+    Enter a scenario that changes your path.<br>
+    e.g. "What if I became an astronaut in Vienna in 2040?"
+  </div>
+  <form (ngSubmit)="onSubmit()">
+    <input
+      class="scenario-input"
+      required
+      autofocus
+      [(ngModel)]="scenario"
+      name="scenario"
+      placeholder="Describe your alternate life..."
+      />
+    <div class="psych-profile">
+      <input
+        class="profile-input"
+        [(ngModel)]="profile.mbti"
+        name="mbti"
+        maxlength="4"
+        placeholder="MBTI (e.g. INFP)"
+        (ngModelChange)="profile.mbti = profile.mbti.toUpperCase().slice(0,4)"/>
+      <input
+        class="profile-input"
+        [(ngModel)]="profile.big5"
+        name="big5"
+        maxlength="5"
+        placeholder="Big Five (OCEAN)"/>
+    </div>
+    <button class="begin-btn" type="submit">Begin Simulation</button>
+  </form>
+  <div class="card-foot"><span>✨</span> Multiverse Mirage by KAVIA</div>
+</div>

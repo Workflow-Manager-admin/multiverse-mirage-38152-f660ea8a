@@ -1,0 +1,10 @@
+.audio-btn {
+  background: none;
+  border: none;
+  color: #00ffe7;
+  font-size: 1.25rem;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: color 0.15s cubic-bezier(.33,1,.69,.94);
+  &:hover { color: #1fdbe9; }
+}

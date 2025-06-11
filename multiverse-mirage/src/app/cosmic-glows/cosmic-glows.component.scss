@@ -1,0 +1,11 @@
+:host { position:fixed; pointer-events:none; left:0; top:0; width:100vw; height:100vh; z-index:2; mix-blend-mode:color-dodge; }
+.glow-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px) brightness(1.4);
+  opacity: .12;
+  pointer-events: none;
+  &.glow1 { left:13vw; top:23vh; width:180px; height:180px; background:#00ffe7; opacity:.13;}
+  &.glow2 { right:7vw; top:13vh; width:100px; height:100px; background:#ffaaff; opacity:.09; }
+  &.glow3 { left:60vw; top:61vh; width:110px; height:110px; background:#8adeff; opacity:.13;}
+}

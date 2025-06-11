@@ -1,0 +1,14 @@
+// Global app styles (includes fonts for fallback)
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background: #1a1333;
+  color: #fff;
+}
+// Hide scrollbars for a more immersive look
+::-webkit-scrollbar { width: 8px; background: #15112a44; }
+::-webkit-scrollbar-thumb { background: #242033AA; border-radius: 4px; }

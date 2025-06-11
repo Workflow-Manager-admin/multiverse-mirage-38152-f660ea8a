@@ -1,0 +1,20 @@
+.renders-title {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  color: #00ffe7;
+  font-weight: 600;
+  font-size: 1.14rem;
+  margin-bottom: 10px;
+  letter-spacing: .021em;
+}
+.renders-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.render-placeholder {
+  width: 148px; height: 94px; background: #18143a; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; color: #00ffe7; font-weight: 500; font-size: 1.19rem;
+  border: 1.3px solid #00ffe726;
+  opacity: .69;
+}

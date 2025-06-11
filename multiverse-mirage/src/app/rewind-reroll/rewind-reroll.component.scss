@@ -1,0 +1,13 @@
+.reroll-btn {
+  margin-top: 12px; background: rgba(0,0,0,0.13);
+  border: 1.2px solid #00ffe777;
+  color: #d5fff6;
+  font-weight: 500; font-size: 1.03rem;
+  border-radius: 8px; padding: 7.5px 18px;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: .025em;
+  cursor: pointer;
+  transition: background 0.14s cubic-bezier(.39,1,.69,.91);
+  box-shadow: 0 1.5px 4px #00ffe759;
+  &:hover { background: #212040; }
+}

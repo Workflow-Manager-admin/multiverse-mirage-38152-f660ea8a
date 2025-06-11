@@ -1,0 +1,39 @@
+.galaxy-card {
+  background: rgba(33, 23, 73, 0.97);
+  border-radius: 18px;
+  padding: 42px 32px 30px 32px;
+  box-shadow: 0 0 24px #00ffe755, 0 1.5px 8px #0007;
+  max-width: 440px;
+  width: 96vw;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  border: 1.7px solid #00ffe730;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  display: flex; flex-direction: column; align-items: center;
+  .card-head {
+    color: #00ffe7; font-family: inherit; font-size: 1.14rem; letter-spacing: 0.04em; margin-bottom: 2px;
+  }
+  h1 {
+    font-family: inherit; font-size: 2.5rem; font-weight: 700; margin: 8px 0 18px 0; color: #fff; letter-spacing: .03em; text-shadow: 0 1.5px 3px #2d1e4f;
+  }
+  .subtext {
+    color: #d3d1ee; margin-bottom: 20px; font-size: 1.09rem; font-family: 'Inter', sans-serif;
+  }
+  .scenario-input {
+    width: 100%; padding: 12px 15px; border-radius: 7px; font-size: 1.11rem;
+    border: 1.2px solid #00ffe775; outline: none; background: #212040; color: #fff; margin-bottom: 17px; font-family: 'Inter',sans-serif;
+  }
+  .psych-profile {
+    display: flex; gap: 10px; margin-bottom: 18px;
+    .profile-input {
+      flex: 1; padding: 9px 10px; border-radius: 6px; border: 1px solid #00ffe757; background: #24214a; color: #fff; font-family: 'Inter',sans-serif; font-size: 1rem;
+    }
+  }
+  .begin-btn {
+    margin-top: 0; background: #00ffe7; color: #232140; font-weight: 600; font-size: 1.13rem;
+    border-radius: 6px; box-shadow: 0 2px 12px #00ffe729; border: none; letter-spacing: .018em; padding: 13px 2.7em;
+    font-family: inherit; cursor: pointer; transition: background 0.17s cubic-bezier(.29,.88,.7,.96);
+    &:hover { background: #1fdbe9; color: #1a1333; }
+  }
+  .card-foot { font-size: 0.97rem; margin-top: 26px; color: #aaa; font-family: 'Inter',sans-serif; opacity:.84; }
+}
